@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "lint": "eslint --ext .js src test"
+  },
+  "dependencies": {
+    "antd-mobile-demo-data": "^0.2.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "umi": "*"
+  },
+  "devDependencies": {
+    "antd-pro-server": "^1.0.1",
+    "axios": "^0.18.0",
+    "copy-to-clipboard": "^3.0.8",
+    "eslint": "^4.19.1",
+    "eslint-config-umi": "^0.1.4",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.14.3",
+    "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.9.2",
+    "umi-plugin-dva": "^0.9.1",
+    "umi-plugin-routes": "^0.1.5"
+  }
+}
