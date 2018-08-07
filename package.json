@@ -3,8 +3,7 @@
     "scripts": {
         "start": "umi dev",
         "build": "umi build",
-        "lint": "eslint --ext .js src test",
-        "precommit": "npm run lint"
+        "lint": "eslint --ext .js src test"
     },
     "dependencies": {
         "antd-mobile-demo-data": "^0.2.0",
