@@ -18,6 +18,14 @@ export default {
               "name": "测试",
               "sale": "0",
               "price": "0.01",
+              "id": "6",
+              "max": "0",
+              "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+            },
+            {
+              "name": "测试",
+              "sale": "0",
+              "price": "0.01",
               "id": "7",
               "max": "0",
               "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
@@ -31,7 +39,42 @@ export default {
               "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
             }
           ]
-        }],
+    }, {
+      "title": "饲料",
+      "shoplist": [{
+        "name": "奥美乐（高能蛋白原料）",
+        "sale": "100",
+        "price": "160.00",
+        "id": "5",
+        "max": "100",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg",
+      },
+      {
+        "name": "测试",
+        "sale": "0",
+        "price": "0.01",
+        "id": "6",
+        "max": "0",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+      },
+      {
+        "name": "测试",
+        "sale": "0",
+        "price": "0.01",
+        "id": "7",
+        "max": "0",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+      },
+      {
+        "name": "测试",
+        "sale": "0",
+        "price": "0.01",
+        "id": "8",
+        "max": "0",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+      }
+      ]
+    }],
     'POST /api/goods/detail/5': {
       "categorie": "饲料",
       "store": "山西碧望生物科技有限公司",
