@@ -1,0 +1,39 @@
+.radio {
+    margin-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.myradio>span{
+    $paddingLR: 1.5px;
+    padding-left: $paddingLR;
+    padding-right: $paddingLR;
+    
+    margin-top: -5px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+
+.footer {
+    $height: 40px;
+    position: fixed;
+    width: 100%;
+    height: $height;
+    line-height: $height;
+    bottom: 0;
+
+    text-align: center;
+    background-color: #fff;
+    color: blue;
+}
+
+// 小图标
+.fa {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
