@@ -49,7 +49,7 @@ class Shopping extends Component {
         });
         this.props.dispatch({ type: 'shopping/change', payload: {data: datas}});
         this.setState({
-            priceAll: price
+            priceAll: price.toFixed(2)
         });
         // this.setState({
         //     data: datas,
@@ -75,7 +75,7 @@ class Shopping extends Component {
             });
             this.props.dispatch({ type: 'shopping/change', payload: { data: datas } });
             this.setState({
-                priceAll: price
+                priceAll: price.toFixed(2)
             });
         } else {
             Toast.info('不能减少了！', 1);
@@ -89,7 +89,7 @@ class Shopping extends Component {
                 i.num = +item.num + 1;
                 if (item.checked) {
                     if (i.num <= i.max) {
-                        price += +i.price;
+                        price += Number(i.price);     
                     }
                 }
                 if(i.num > i.max) {
@@ -101,7 +101,7 @@ class Shopping extends Component {
         });
         this.props.dispatch({ type: 'shopping/change', payload: { data: datas } });
         this.setState({
-            priceAll: price
+            priceAll: price.toFixed(2)
         });
     }
     checkAll = () => {
@@ -123,7 +123,7 @@ class Shopping extends Component {
         };
         this.props.dispatch({ type: 'shopping/change', payload: { data: datas, checkedAll: !checked } });
         this.setState({
-            priceAll: price
+            priceAll: price.toFixed(2)
         });
         // this.setState({
         //     data: datas,

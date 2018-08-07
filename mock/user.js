@@ -162,10 +162,10 @@ export default {
           id: 3,
           intro: '这是一袋小狗饲料啦啦啦啦啦啦啦啦啦啦啦',
           checked: false,
-          num: 1,
-          price: 250,
+          num: 3,
+          price: 2.02,
           img: '',
-          max: '5'
+          max: '15'
       }]
     
     ,
