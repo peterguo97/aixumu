@@ -52,8 +52,10 @@ class Detail extends React.Component {
     }
 
     handleClick(){
+        console.log(1);
+        
         this.props.dispatch({
-            type: 'shoplist/showOrNotShow'
+            type: 'detail/showOrNotShow'
         })
     }
     render(){
