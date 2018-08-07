@@ -52,6 +52,7 @@ class ShoppingList extends Component {
         })
         return price;
     }
+
     // 查看物流
     // logistics(id) {
     //     this.props.dispatch({ type: 'shoppingList/logis', payload: id}); 
@@ -114,6 +115,7 @@ class ShoppingList extends Component {
 }
 
 class IsPay extends Component {
+
     render() {
         const isPay = this.props.isPay;
         const id = this.props.id;

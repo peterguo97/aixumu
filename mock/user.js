@@ -192,7 +192,7 @@ export default {
            id: 5,
            store: '饲料公司',
            result: '交易成功',
-           isPay: 3,
+           isPay: 1,
            main: [{
                title: '商品',
                num: 2,
