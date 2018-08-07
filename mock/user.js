@@ -18,6 +18,14 @@ export default {
               "name": "测试",
               "sale": "0",
               "price": "0.01",
+              "id": "6",
+              "max": "0",
+              "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+            },
+            {
+              "name": "测试",
+              "sale": "0",
+              "price": "0.01",
               "id": "7",
               "max": "0",
               "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
@@ -31,7 +39,42 @@ export default {
               "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
             }
           ]
-        }],
+    }, {
+      "title": "饲料",
+      "shoplist": [{
+        "name": "奥美乐（高能蛋白原料）",
+        "sale": "100",
+        "price": "160.00",
+        "id": "5",
+        "max": "100",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg",
+      },
+      {
+        "name": "测试",
+        "sale": "0",
+        "price": "0.01",
+        "id": "6",
+        "max": "0",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+      },
+      {
+        "name": "测试",
+        "sale": "0",
+        "price": "0.01",
+        "id": "7",
+        "max": "0",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+      },
+      {
+        "name": "测试",
+        "sale": "0",
+        "price": "0.01",
+        "id": "8",
+        "max": "0",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png",
+      }
+      ]
+    }],
     'POST /api/goods/detail/5': {
       "categorie": "饲料",
       "store": "山西碧望生物科技有限公司",
@@ -72,11 +115,66 @@ export default {
         "url": "/1/detail",
         "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png"
       },
-      // {
-      //   "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
-      //   "url": "/1/detail",
-      //   "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
-      // }
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
     ],
     'POST /api/goods/search': [{
         "name": "测试",
@@ -94,7 +192,7 @@ export default {
            id: 5,
            store: '饲料公司',
            result: '交易成功',
-           isPay: 1,
+           isPay: 3,
            main: [{
                title: '商品',
                num: 2,
@@ -139,8 +237,9 @@ export default {
       message: '审核中',
     },
     'POST /api/point/checkin': {
-      value: 0,
-      message: '审核中',
+      value: 1,
+      multiple: 2,
+      point: 3
     },
     'POST /api/address/users': {
       data: [

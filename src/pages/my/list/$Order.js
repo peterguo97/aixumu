@@ -59,9 +59,9 @@ class Order extends Component {
                              listId: paymentid,
                              status: 1
                          }).then((message) => {
-                             window.alert(message);
+                            //  window.alert(message);
                              this.props.dispatch(routerRedux.push(`/`));
-                             window.alert(2);
+                            //  window.alert(2);
                              
                          }).catch((e) => {
                              console.log(e);

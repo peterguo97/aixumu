@@ -11,6 +11,7 @@ class Member extends React.Component {
         this.state = {
             value: false,
             inputValue: '',
+            point: 0,
             multiple: 0,
             invitKey: ''
         }
@@ -45,6 +46,7 @@ class Member extends React.Component {
                  return;
              }
             this.setState({
+                point: message.data.point,
                 value: message.data.value,
                 multiple: message.data.multiple,
                 invitKey: message.data.invitKey
@@ -58,6 +60,7 @@ class Member extends React.Component {
         let content = '';
         if(value) {
             content = <div className={styles.main}>
+                        <p>你目前的积分： {this.state.point}</p>
                         <p>你目前的积分倍数：{this.state.multiple}</p>
                         <p>分享以下邀请码给好友赚取积分</p>
                         <p> 会员号邀请： </p>

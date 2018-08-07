@@ -127,6 +127,8 @@ class IsPay extends Component {
             btnState = '待收货'
         } else if(isPay === 2) {
             btnState = <Link to={`./eval/${id}`} style={color}>评价</Link>
+        } else if(isPay === 3) {
+            btnState = <span style={color}>已评价</span>
         }
         return(
             <div className={styles.eval}>

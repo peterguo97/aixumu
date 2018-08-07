@@ -23,22 +23,23 @@ class Nav extends React.Component {
             <WingBlank>
                 <Carousel
                     autoplay={true}
-                    infinite
+                    infinite={true}
                 >
                     {this.state.data.map(val => (
-                        <div
+                        <a 
+                            href={val.link}
                             key={val.id}
-                            style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
-                        >
-                        <a href={val.link}>
+                            style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}>
                              <img
                                 src={val.url}
                                 alt={val.url}
                                 style={{ width: '100%', verticalAlign: 'top' }}
+                                onLoad={() => {
+                                    // fire window resize event to change height
+                                    window.dispatchEvent(new Event('resize'));
+                                }}
                             />
                         </a>
-                           
-                        </div>
                     ))}
                 </Carousel>
             </WingBlank>

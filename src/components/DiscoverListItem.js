@@ -8,9 +8,9 @@ class DiscoverListItem extends React.Component {
         console.log(data);
         
         return(
-            <div className={ normal.discoverItem }>
+            <div className={ normal.discoverItem } style={{height: 77}}>
                 <Link to={data.url}>
-                    <div className={normal.imgDetail}><img src={data.img} alt="图片详情"/></div>
+                    <div className={normal.imgDetail}><img src={data.img} alt="图片详情" style={{ height: 40}}/></div>
                     <div className={normal.itemTitle}>{data.name}</div>
                 </Link>
             </div>

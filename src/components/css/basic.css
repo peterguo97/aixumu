@@ -63,8 +63,8 @@
 .discoverWrap{
   display: flex;
   justify-content: flex-start;
-  width: 42%;
+  width: 30%;
   background: #fff;
   margin-top: 8px;
-  margin-left: 6%;
+  margin-left: 2%;
 }
