@@ -1,7 +1,7 @@
 import React from 'react';
-import food from '../assets/food.png';
-import food2 from '../assets/food2.png';
-import food3 from '../assets/food3.png';
+import food from 'assets/food.png';
+import food2 from 'assets/food2.png';
+import food3 from 'assets/food3.png';
 import { Grid, WingBlank, WhiteSpace } from 'antd-mobile';
 const data = [
     {

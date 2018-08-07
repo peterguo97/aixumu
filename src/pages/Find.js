@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Discover from '../components/discover';
+import Discover from 'components/discover';
 import TabBar from "./TabBar";
-import findSelect from '../assets/find-select.svg';
-import user from '../assets/user.svg';
-import home from '../assets/home.svg';
+import findSelect from 'assets/find-select.svg';
+import user from 'assets/user.svg';
+import home from 'assets/home.svg';
 
 class Find extends Component {
     constructor() {
