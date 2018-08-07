@@ -59,7 +59,7 @@ class Beuser extends React.Component {
             data = <div style={{ textAlign: 'center'}}>
                 <h2 style={styles}>{message}</h2>
                 <p>网址为{url}</p>
-                 <Button type="primary" inline style={{ marginTop: 35}} onClick={this.copy}>复制链接</Button>
+                <Button type="primary" style={{ marginTop: 35 }} onClick={this.copy}>复制链接</Button>
             </div>
         }
         return(

@@ -20,8 +20,6 @@ class Order extends Component {
     // 确认跳转
     submit = () => { 
          let paymentid = this.props.match.params.payment;
-         console.log(paymentid);
-         
          axios.get('/api/super').then(message => {
              const value = message.data.value;
              if (value === 0) {
@@ -61,7 +59,10 @@ class Order extends Component {
                              listId: paymentid,
                              status: 1
                          }).then((message) => {
+                             window.alert(message);
                              this.props.dispatch(routerRedux.push(`/`));
+                             window.alert(2);
+                             
                          }).catch((e) => {
                              console.log(e);
                          });

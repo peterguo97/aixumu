@@ -139,7 +139,7 @@ export default {
       message: '审核中',
     },
     'POST /api/point/checkin': {
-      value: 1,
+      value: 0,
       message: '审核中',
     },
     'POST /api/address/users': {

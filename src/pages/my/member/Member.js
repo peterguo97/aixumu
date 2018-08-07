@@ -69,7 +69,7 @@ class Member extends React.Component {
                         <p>点击下列按钮成为会员</p>
                         <p> 注册码(可不填)： </p>
                         <p><input type="text" onChange={this.input}/></p>
-                        <Button type="primary" inline className={styles.button} onClick={this.submit}>注册</Button>
+                        <Button type="primary" inline className={styles.button} onClick={this.submit} activeClassName="am-button-primary">注册</Button>
                     </div>
         }
         
