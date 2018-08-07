@@ -45,6 +45,12 @@ class Detail extends React.Component {
         }
     }
     
+    componentWillUnmount = () => {
+        this.props.dispatch({
+            type: 'detail/clearAll'
+        })
+    }
+
     showFooter = (bol) => {
         this.setState({
             showFooter: bol
@@ -52,8 +58,6 @@ class Detail extends React.Component {
     }
 
     handleClick(){
-        console.log(1);
-        
         this.props.dispatch({
             type: 'detail/showOrNotShow'
         })

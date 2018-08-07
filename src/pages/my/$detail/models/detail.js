@@ -55,6 +55,15 @@ export default {
                 return Object.assign({}, state, { list: recentlist });
             }
         },
+        clearAll(state, { payload }){
+            let obj = {
+                showlist: false,
+                list: [],
+                page: 0,
+                goodsdata: {}
+            }
+            return Object.assign({},state,obj);
+        },
 
         decreaseFromlist(state, {payload}){
             const list =JSON.parse(JSON.stringify(state.list));
