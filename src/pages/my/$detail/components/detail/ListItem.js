@@ -49,7 +49,7 @@ class ListItem extends React.Component {
         return(
             <div className={style.listItem}>             
                 <div className={style.list_title}>{data.name}</div>
-                <div className={style.list_price}>¥{data.price*data.num}111</div>
+                <div className={style.list_price}>¥{data.price*data.num}</div>
                 <div className={style.detail_button}>
                     <div className={style.decrease} onClick={this.handleDecrease.bind(this)}>
                         <img src={decrease} alt="-"/>
