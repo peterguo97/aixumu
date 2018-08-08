@@ -7,11 +7,13 @@ import styles from "./ListDetail.scss";
 
 const Item = List.Item;
 class ListDetail extends Component {
-    refund = () => {     
-        this.props.dispatch({ type: 'listdetail/refund'});
+    submit = () => {
+        const {value} = this.props.listdetail;
+        console.log(value);
+        
     }
     render() {
-        const { name, phone, store, result, list, footer, storeId } = this.props.listdetail;
+        const { name, phone, store, result, list, footer, storeId, btn } = this.props.listdetail;
         let price = 0.00;
         list.map(i => {
             price += i.num * i.price;
@@ -32,25 +34,28 @@ class ListDetail extends Component {
                             <Flex.Item className={styles.textalign}>{result}</Flex.Item>
                         </Flex>
                    
-                       { list.map( (list, index) => 
-                        <Item thumb={list.img} multipleLine="true" className={styles.item} key={index}>
-                            <Flex>
-                                <Flex.Item>
-                                    <div>{list.title}</div>
-                                    <div>{list.sub}</div>
-                                </Flex.Item>
-                                <Flex.Item className={styles.flexitem}>
-                                    <div>￥{list.price}</div>
-                                    <div>×{list.num}</div>
-                                </Flex.Item>
-                            </Flex>
-                        </Item>)}
+                       { 
+                           list.map( (list, index) => 
+                            <Item thumb={list.img} multipleLine="true" className={styles.item} key={index}>
+                                <Flex>
+                                    <Flex.Item>
+                                        <div>{list.title}</div>
+                                        <div>{list.sub}</div>
+                                    </Flex.Item>
+                                    <Flex.Item className={styles.flexitem}>
+                                        <div>￥{list.price}</div>
+                                        <div>×{list.num}</div>
+                                    </Flex.Item>
+                                </Flex>
+                            </Item>)
+                        }
                     </Link>
                     <Flex className={styles.listheader}>
                         <Flex.Item className={styles.textalign}>合计: ￥{price}</Flex.Item>
                     </Flex>
                     <div className={styles.refund}>
-                        <span onClick={this.refund}>申请退款</span>
+                        {/* <span onClick={this.refund}>申请退款</span> */}
+                        <span onClick={this.submit}>{btn}</span>
                     </div>
                 </List>
                 <footer className={styles.footer}>
@@ -58,7 +63,7 @@ class ListDetail extends Component {
                         订单编号：{footer.num1}
                     </span>
                     <span>
-                        付款时间： { footer.time }
+                        创建时间： { footer.time }
                     </span>
                     <span>
                         成交时间： {footer.endtime}

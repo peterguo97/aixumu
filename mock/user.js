@@ -175,6 +175,36 @@ export default {
         "url": "/1/detail",
         "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
       },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
+      {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      },
     ],
     'POST /api/goods/search': [{
         "name": "测试",
@@ -308,5 +338,36 @@ export default {
     'GET /api/store/main': {
       img: 'http://img05.tooopen.com/images/20150820/tooopen_sy_139205349641.jpg',
       name: 'sb公司'
+    },
+    'POST /api/order/show': {
+      id: '',
+      name: '',
+      phone: '',
+      store: '',
+      result: '交易完成',
+      list: [],
+      footer: {},
+      storeId: '1',
+      value: 0,
+      btn: '已评价'
     }
 };
+
+/*
+  result: '待付款'
+  btn: '待付款'
+  value: 0
+
+  result: '待收货'
+  btn: '确认收货'
+  value: 1
+
+  result: '交易成功'
+  btn: '评价'
+  value: 2
+
+  result: '交易成功'
+  btn: '已评价'
+  value: 3
+
+*/

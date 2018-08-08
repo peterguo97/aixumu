@@ -14,7 +14,8 @@ export default {
         result: '',
         list: [],
         footer: {},
-        storeId: '1'
+        storeId: '1',
+        value: 1
     },
 
     subscriptions: {
