@@ -3,7 +3,7 @@ import { PullToRefresh } from 'antd-mobile';
 import normal from './css/basic.css';
 import DiscoverListitem from './DiscoverListItem';
 import axios from 'axios';
-const offset = 0;
+let offset = 0;
 
 class Discover extends React.Component {
     constructor(){
