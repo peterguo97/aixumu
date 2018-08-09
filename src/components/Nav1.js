@@ -7,10 +7,12 @@ const data = [
     {
         icon: food,
         text: '饲料',
+        url: 'feed'
     },
     {
         icon: food2,
         text: '动保',
+        url: 'dongbao'
     },
     {
         icon: food3,

@@ -12,7 +12,7 @@ class Find extends Component {
             all: {
                 home: home,
                 find: findSelect,
-                user: user,
+				user: user,
                 page: '/find'
             }
 		}
