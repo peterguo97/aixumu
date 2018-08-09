@@ -4,6 +4,7 @@ import axios from 'axios';
 import { List } from 'antd-mobile';
 import { Link } from "dva/router";
 import { connect } from 'dva';
+import { routerRedux } from "dva/router";
 
 const Item = List.Item;
 const Brief = Item.Brief;
@@ -21,7 +22,7 @@ class Supply extends React.Component {
         return (
             <div>
                 <Return page={page} />
-                <ListAll />
+                <ListAll supply={this.props}/>
             </div>
         )
     }
@@ -44,6 +45,10 @@ class ListAll extends React.Component {
         });
     }
 
+    changPage = (list) => {
+        this.props.supply.dispatch({type: 'supply/change', payload: list});
+        this.props.supply.dispatch(routerRedux.push('/message'));
+    }
     render() {
         const message = this.state.message;
         console.log(message);
@@ -52,20 +57,17 @@ class ListAll extends React.Component {
             <List renderHeader={() => '供求信息'} className="my-list">
                 {  
                     message.map(list =>
-                        <Link 
-                            to='message'
+                        <Item
+                            arrow="horizontal"
+                            multipleLine
+                            onClick={() => { }}
+                            platform={list.title}
                             key={list.id}
+                            onClick={_el => this.changPage(list)}
                         >
-                            <Item
-                                arrow="horizontal"
-                                multipleLine
-                                onClick={() => { }}
-                                platform={list.name}
-                            >
-                                {list.name}
-                                <Brief>{list.message}</Brief>
-                            </Item>
-                        </Link>
+                            {list.title}
+                            <Brief>{list.message}</Brief>
+                        </Item>
                     )
                 }
             </List>

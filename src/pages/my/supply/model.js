@@ -1,7 +1,12 @@
 export default {
     namespace: 'supply',
      state: {
-        mes: ''
+        message: '',
+        title: ''
     },
-
+    reducers: {
+        change(state, action) {
+            return { ...state, ...action.payload };
+        }
+    },
 }

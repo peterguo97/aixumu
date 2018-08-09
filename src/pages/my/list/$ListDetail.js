@@ -28,28 +28,26 @@ class ListDetail extends Component {
                     <p>电话号码：{phone}</p>
                 </header>
                 <List className={styles.list}>
-                    <Link to={`../${storeId}/detail`} className={styles.color}>
-                        <Flex className={styles.listheader}>
-                            <Flex.Item>{store}</Flex.Item>
-                            <Flex.Item className={styles.textalign}>{result}</Flex.Item>
-                        </Flex>
-                   
-                       { 
-                           list.map( (list, index) => 
-                            <Item thumb={list.img} multipleLine="true" className={styles.item} key={index}>
-                                <Flex>
-                                    <Flex.Item>
-                                        <div>{list.title}</div>
-                                        <div>{list.sub}</div>
-                                    </Flex.Item>
-                                    <Flex.Item className={styles.flexitem}>
-                                        <div>￥{list.price}</div>
-                                        <div>×{list.num}</div>
-                                    </Flex.Item>
-                                </Flex>
-                            </Item>)
-                        }
-                    </Link>
+                    <Flex className={styles.listheader}>
+                        <Flex.Item>{store}</Flex.Item>
+                        <Flex.Item className={styles.textalign}>{result}</Flex.Item>
+                    </Flex>
+                
+                    { 
+                        list.map( (list, index) => 
+                        <Item thumb={list.img} multipleLine="true" className={styles.item} key={index}>
+                            <Flex>
+                                <Flex.Item>
+                                    <div>{list.title}</div>
+                                    <div>{list.sub}</div>
+                                </Flex.Item>
+                                <Flex.Item className={styles.flexitem}>
+                                    <div>￥{list.price}</div>
+                                    <div>×{list.num}</div>
+                                </Flex.Item>
+                            </Flex>
+                        </Item>)
+                    }
                     <Flex className={styles.listheader}>
                         <Flex.Item className={styles.textalign}>合计: ￥{price}</Flex.Item>
                     </Flex>

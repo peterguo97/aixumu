@@ -29,7 +29,7 @@ class ListItem extends React.Component {
     }
 
     handleDecrease = () => {
-          const data = this.props.data;
+        const data = this.props.data;
         console.log(1111);
         
         this.props.dispatch({
