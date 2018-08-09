@@ -22,3 +22,15 @@ export function refundList() {
         credentials: 'include',
     });
 }
+
+
+export function goodsCheck(id) {
+    return request('/api/listdetail/goodscheck', {
+        method: 'post',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        credentials: 'include',
+        body: JSON.stringify(id),
+    });
+}

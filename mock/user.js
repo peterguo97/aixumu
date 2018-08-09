@@ -340,14 +340,20 @@ export default {
       name: 'sb公司'
     },
     'POST /api/order/show': {
-      id: '',
+      id: '5',
       name: '',
       phone: '',
       store: '',
-      result: '交易完成',
+      result: '交易成功',
       list: [],
       footer: {},
-      storeId: '1',
+      btn: '已评价',
+      value: 4
+    },
+    'POST /api/listdetail/goodsCheck': {
+      result: '交易成功',
+      btn: '评价',
+      value: 3,
     },
     'GET /api/get/supply': [
       {
@@ -375,7 +381,7 @@ export default {
         title: '供求信息',
         message: '这是一个商店的测试界面，你要小心这是一个商店的测试界面，你要小心这是一个商店的测试界面，你要小心这是一个商店的测试界面，你要小心'
       }
-    ]
+    ],
 };
 
 /*

@@ -1,15 +1,23 @@
 import React, { Component } from "react";
-import { List, Flex } from "antd-mobile";
+import { List, Flex, Toast } from "antd-mobile";
 import { connect } from "dva";
-import { Link } from "dva/router";
+import { Link, routerRedux } from "dva/router";
 import yay from "assets/yay.jpg";
 import styles from "./ListDetail.scss";
 
 const Item = List.Item;
 class ListDetail extends Component {
     submit = () => {
-        const {value} = this.props.listdetail;
-        console.log(value);
+        const { value, id } = this.props.listdetail;
+        if(value === 0) {
+            this.props.dispatch(routerRedux.push(`/order/${id}`));
+        } else if(value === 2) {
+            this.props.dispatch({type: 'listdetail/goods', payload: {id}});
+        } else if(value === 3) {
+            this.props.dispatch(routerRedux.push(`/eval/${id}`));
+        } else if(value === 4) {
+            Toast.info('您已评价！', 1);
+        } 
         
     }
     render() {
