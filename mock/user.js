@@ -110,7 +110,7 @@ export default {
       "created_at": "2018-07-02 15:52:19",
       "updated_at": "2018-07-03 18:16:04"
     },
-    'GET /api/gofun': [{
+    'POST /api/gofun': [{
         "name": "测试",
         "url": "/1/detail",
         "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/02/goods_1530521014_Pm4OzdQuQb.png"

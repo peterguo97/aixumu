@@ -84,7 +84,7 @@ class ListFooter extends React.Component {
     getPrice(arr){
         let tempprice = 0;
         arr.forEach( (item)=>{
-            tempprice += item.price * item.num;
+            tempprice += (+item.price) * item.num;
         })
         return tempprice;  
     }
