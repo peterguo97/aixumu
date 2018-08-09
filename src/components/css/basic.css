@@ -61,9 +61,14 @@
   overflow: hidden;
 }
 
-.discoverWrap{
+.discoverWrapper {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.discoverWrap{
   width: 30%;
   background: #fff;
   margin-top: 8px;
