@@ -13,6 +13,7 @@ app.use(createLoading());
 app.model({ namespace: 'global', ...(require('E:/git/next-food/myapp/aixumu/src/models/global.js').default) });
 app.model({ namespace: 'detail', ...(require('E:/git/next-food/myapp/aixumu/src/pages/my/$detail/models/detail.js').default) });
 app.model({ namespace: 'handlestyle', ...(require('E:/git/next-food/myapp/aixumu/src/pages/my/$detail/models/handlestyle.js').default) });
+app.model({ namespace: 'model', ...(require('E:/git/next-food/myapp/aixumu/src/pages/my/supply/model.js').default) });
 app.model({ namespace: 'list', ...(require('E:/git/next-food/myapp/aixumu/src/pages/my/list/models/list.js').default) });
 app.model({ namespace: 'listdetail', ...(require('E:/git/next-food/myapp/aixumu/src/pages/my/list/models/listdetail.js').default) });
 app.model({ namespace: 'order', ...(require('E:/git/next-food/myapp/aixumu/src/pages/my/list/models/order.js').default) });

@@ -5,7 +5,7 @@ import normal from './css/basic.css';
 class DiscoverListItem extends React.Component {
     render(){
         const data = this.props.data;
-        console.log(data);
+        // console.log(data);
         
         return(
             <div className={ normal.discoverItem }>

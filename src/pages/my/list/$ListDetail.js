@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { List, Flex } from "antd-mobile";
 import { connect } from "dva";
 import { Link } from "dva/router";
-import yay from "../../../assets/yay.jpg";
+import yay from "assets/yay.jpg";
 import styles from "./ListDetail.scss";
 
 const Item = List.Item;
@@ -66,7 +66,7 @@ class ListDetail extends Component {
                         创建时间： { footer.time }
                     </span>
                     <span>
-                        成交时间： {footer.endtime}
+                        成交时间： {footer.finished_at}
                     </span>
                 </footer>
             </div>

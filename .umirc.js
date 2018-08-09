@@ -17,6 +17,8 @@ export default {
         { path: '/', exact: true, component: 'IndexPage' },
         { path: '/:id/detail', component: './my/$detail/detail' },
         { path: '/search/:value', component: './my/search/$SearchResult' },
+        { path: '/supply', component: './my/supply/supply' },
+        { path: '/message', component: './my/supply/message' },
         { path: '/find', component: 'Find' },
         { path: '/user', component: 'Users' },
         { path: '/list', component: './my/list/ShoppingList' },

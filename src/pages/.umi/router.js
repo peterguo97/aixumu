@@ -28,6 +28,16 @@ let routes = [
     "exact": true
   },
   {
+    "path": "/supply",
+    "component": require('../my/supply/supply').default,
+    "exact": true
+  },
+  {
+    "path": "/message",
+    "component": require('../my/supply/message').default,
+    "exact": true
+  },
+  {
     "path": "/find",
     "component": require('../Find').default,
     "exact": true

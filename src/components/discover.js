@@ -26,7 +26,7 @@ class Discover extends React.Component {
                 <div className={normal.back}>
                     <span style={{padding: '8px'}}>发现</span>
                 </div>
-                <div  className={normal.discoverlist}>
+                <div className={normal.discoverlist}>
                     {
                         data.map(function(value,index) {
                             return (

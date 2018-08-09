@@ -1,7 +1,7 @@
 import React from 'react';
 import normal from './basic.css';
-import DiscoverListItem from '../../../components/DiscoverListItem';
-import back from '../../../assets/back.png';
+import DiscoverListItem from 'components/DiscoverListItem';
+import back from 'assets/back.png';
 import { Link } from 'dva/router';
 import axios from 'axios';
 

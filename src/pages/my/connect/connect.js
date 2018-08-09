@@ -1,5 +1,5 @@
 import React from 'react';
-import contact from '../../../assets/contact.jpg';
+import contact from 'assets/contact.jpg';
 
 class Connect extends React.Component {
     render(){

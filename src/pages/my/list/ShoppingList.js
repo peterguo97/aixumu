@@ -3,7 +3,7 @@ import { List, Flex, Modal } from "antd-mobile";
 import { Link } from "dva/router";
 import styles from "./ShoppingList.scss";
 import { connect } from "dva";
-import Return from "../../../components/return/return.js";
+import Return from "components/return/return.js";
 
 const Item = List.Item;
 const alert = Modal.alert;
