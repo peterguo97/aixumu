@@ -68,11 +68,13 @@ class Discover extends React.Component {
                             refreshing={this.state.refreshing}
                             onRefresh={this.onMyRefresh}
                         >
-                            {this.state.data.map( (value, index) => (
-                                <div key={index} className={normal.discoverWrap}>
-                                    <DiscoverListitem data={value} />
-                                </div>
-                            ))}
+                            <div className={normal.discoverWrapper}>
+                                {this.state.data.map( (value, index) => (
+                                    <div key={index} className={normal.discoverWrap}>
+                                        <DiscoverListitem data={value} />
+                                    </div>
+                                ))}
+                            </div>
                         </PullToRefresh>
                     }
                 </div>

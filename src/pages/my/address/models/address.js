@@ -15,8 +15,6 @@ export default {
     subscriptions: {
         setup({ dispatch, history }) {
             history.listen(({ pathname }) => {
-                console.log(1);
-                
                 if (pathname === '/address') {
                     dispatch({
                         type: 'fetch',
