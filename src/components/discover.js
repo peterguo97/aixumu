@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import { PullToRefresh } from 'antd-mobile';
 import normal from './css/basic.css';
 import DiscoverListitem from './DiscoverListItem';
@@ -11,14 +12,17 @@ class Discover extends React.Component {
         this.state = {
             data: [],
             refreshing: false,
+            height: document.documentElement.clientHeight,
         }
     }
 
     componentDidMount = () => {
         console.log(offset);
+        const hei = this.state.height - ReactDOM.findDOMNode(this.ptr).offsetTop;
         axios.post('/api/gofun',{offset: offset}).then((message)=>{
             this.setState({
-                data: message.data
+                data: message.data,
+                height: hei,
             })
         })
     }
@@ -34,6 +38,7 @@ class Discover extends React.Component {
             this.setState({
                 refreshing: false,
                 data: data,
+                
             })
         })
     }
@@ -54,6 +59,11 @@ class Discover extends React.Component {
                         <PullToRefresh
                             damping={100}
                             indicator={{ deactivate: '上拉可以刷新' }}
+                            ref={el => this.ptr = el}
+                            style={{
+                                height: this.state.height,
+                                overflow: 'auto',
+                            }}
                             direction='up'
                             refreshing={this.state.refreshing}
                             onRefresh={this.onMyRefresh}
