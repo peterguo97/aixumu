@@ -51,7 +51,8 @@ class SearchResult extends React.Component {
                     </div>
                 </Link>
                 <p style={{
-                    textAlign: 'center'
+                    textAlign: 'center',
+                    marginTop: '0.5em'
                 }}>搜索结果</p>
                 { listItem !== '' && listItem }
             </div>
