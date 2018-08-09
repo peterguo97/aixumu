@@ -32,7 +32,7 @@
 
 .discoverlist {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 100%;
   background: rgb(243,245,247);
   flex-wrap: wrap;
@@ -62,7 +62,8 @@
 }
 
 .discoverWrap{
-  width: 40%;
+  width: 30%;
   background: #fff;
   margin-top: 8px;
+  margin-left: 2.5%;
 }

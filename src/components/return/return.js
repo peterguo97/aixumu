@@ -4,7 +4,8 @@ import { Link } from 'dva/router';
 
 class Return extends Component {
     render() {
-        const { page } = this.props;
+        const { page, title } = this.props;
+    
         const oDiv = {
             backgroundColor: 'rgb(18,149,209)',
             height: 40,
@@ -15,10 +16,18 @@ class Return extends Component {
             width: 40,
             height: 40
         }
+
+        const titleSty = {
+            position: 'absolute',
+            color: '#fff',
+            fontSize: 18,
+            top: 6.8
+        }
         return(
             <div style={oDiv}>
                 <Link to={page}>
                     <Icon type="left" style={oIcon}/>
+                    {title && <span style={titleSty}>{title}</span>}
                 </Link>
             </div>
         )

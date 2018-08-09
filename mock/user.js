@@ -214,6 +214,10 @@ export default {
         "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
         "url": "/1/detail",
         "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
+      }, {
+        "name": "奥美乐（高能蛋白原料）shdasdfhasj好大护法就是的范德萨阿斯蒂芬哈哈第三方哈市分行的萨芬好",
+        "url": "/1/detail",
+        "img": "http://www.aixumu.net/uploads/images/goodsAvatars/201807/03/goods_1530612964_CtixD6QHdp.jpg"
       }
     ],
     'GET /api/list/show': {
@@ -382,6 +386,8 @@ export default {
         message: '这是一个商店的测试界面，你要小心这是一个商店的测试界面，你要小心这是一个商店的测试界面，你要小心这是一个商店的测试界面，你要小心'
       }
     ],
+    'POST /api/post/dongbao':  [],
+    'POST /api/post/feed': []
 };
 
 /*

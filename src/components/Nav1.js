@@ -8,12 +8,12 @@ const data = [
     {
         icon: food,
         text: '饲料',
-        url: ''
+        url: 'feed'
     },
     {
         icon: food2,
         text: '动保',
-        url: ''
+        url: 'dongbao'
     },
     {
         icon: food3,
