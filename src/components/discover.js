@@ -3,7 +3,7 @@ import { PullToRefresh } from 'antd-mobile';
 import normal from './css/basic.css';
 import DiscoverListitem from './DiscoverListItem';
 import axios from 'axios';
-const offset = 0;
+let offset = 0;
 
 class Discover extends React.Component {
     constructor(){
@@ -13,6 +13,7 @@ class Discover extends React.Component {
             refreshing: false,
         }
     }
+
     componentDidMount = () => {
         console.log(offset);
         axios.post('/api/gofun',{offset: offset}).then((message)=>{
@@ -51,7 +52,7 @@ class Discover extends React.Component {
                 <div  className={normal.discoverlist}>
                     {
                         <PullToRefresh
-                            damping={60}
+                            damping={100}
                             indicator={{ deactivate: '上拉可以刷新' }}
                             direction='up'
                             refreshing={this.state.refreshing}
