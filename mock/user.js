@@ -391,24 +391,24 @@ export default {
 };
 
 /*
-  result: '待付款'
-  btn: '待付款'
-  value: 0
+  result: '待付款'  
+  btn: '待付款'   result: '待付款'
+  value: 0        isPay: 0
 
   result: '待发货'
-  btn: '待发货'
-  value: 1
+  btn: '待发货' result: '待发货'
+  value: 1    isPay: 1
 
   result: '待收货'
-  btn: '确认收货'
-  value: 2
+  btn: '确认收货'     result: '待收货'
+  value: 2            isPay: 2
 
-  result: '交易成功'
-  btn: '评价'
+  result: '交易成功'  result: '交易成功'
+  btn: '评价'         isPay: 3
   value: 3
 
-  result: '交易成功'
-  btn: '已评价'
+  result: '交易成功'      result: '交易成功'
+  btn: '已评价'           isPay: 4
   value: 4
 
 */

@@ -28,6 +28,16 @@ let routes = [
     "exact": true
   },
   {
+    "path": "/feed",
+    "component": require('../Feed').default,
+    "exact": true
+  },
+  {
+    "path": "/dongbao",
+    "component": require('../Dongbao').default,
+    "exact": true
+  },
+  {
     "path": "/supply",
     "component": require('../my/supply/supply').default,
     "exact": true
@@ -105,16 +115,6 @@ let routes = [
   {
     "path": "/connect",
     "component": require('../my/connect/connect').default,
-    "exact": true
-  },
-  {
-    "path": "/dongbao",
-    "component": require('../Dongbao').default,
-    "exact": true
-  },
-  {
-    "path": "/feed",
-    "component": require('../Feed').default,
     "exact": true
   }
 ];

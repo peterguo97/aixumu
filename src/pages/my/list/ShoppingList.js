@@ -126,10 +126,12 @@ class IsPay extends Component {
         if(isPay === 0) {
             btnState = <Link to={`./order/${id}`} style={color}>待付款</Link>
         } else if(isPay === 1) {
-            btnState = '待收货'
-        } else if(isPay === 2) {
-            btnState = <Link to={`./eval/${id}`} style={color}>评价</Link>
+            btnState = '待发货';
+        } else if (isPay === 2) {
+            btnState = '待收货';
         } else if(isPay === 3) {
+            btnState = <Link to={`./eval/${id}`} style={color}>评价</Link>
+        } else if(isPay === 4) {
             btnState = <span style={color}>已评价</span>
         }
         return(

@@ -48,7 +48,7 @@ class Discover extends React.Component {
     }
 
     render(){
-        let data = this.state.data;
+        // let data = this.state.data;
         return(
             <div className={normal.Wrapper}>
                 <div className={normal.back}>

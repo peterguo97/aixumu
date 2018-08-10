@@ -26,9 +26,9 @@ export default {
 
     effects: {
         *fetch({ payload }, { call, put }) {  // eslint-disable-line
-            const data = yield call(evals, payload);
-            console.log(data,1);
-              
+            console.log(payload);
+            
+            const data = yield call(evals, payload);    
             if(data.data.message) {
                 Toast.info('评价成功', 1);
                 yield put(routerRedux.push('/list'));

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { PullToRefresh, NavBar, Icon } from 'antd-mobile';
-import { Link } from 'dva/router';
+import { PullToRefresh } from 'antd-mobile';
+// import { Link } from 'dva/router';
 import normal from 'components/css/basic.css';
 import DiscoverListitem from 'components/DiscoverListItem';
 import Return from 'components/return/return';
@@ -52,7 +52,7 @@ class Dongbao extends React.Component {
     }
 
     render() {
-        let data = this.state.data;
+        // let data = this.state.data;
         const page = this.state.page;
         const title = this.state.title;
         return (

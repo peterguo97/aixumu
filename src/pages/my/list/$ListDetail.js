@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { List, Flex, Toast } from "antd-mobile";
 import { connect } from "dva";
-import { Link, routerRedux } from "dva/router";
+import { routerRedux } from "dva/router";
 import yay from "assets/yay.jpg";
 import styles from "./ListDetail.scss";
 
@@ -21,7 +21,7 @@ class ListDetail extends Component {
         
     }
     render() {
-        const { name, phone, store, result, list, footer, storeId, btn } = this.props.listdetail;
+        const { name, phone, store, result, list, footer, btn } = this.props.listdetail;
         let price = 0.00;
         list.map(i => {
             price += i.num * i.price;
